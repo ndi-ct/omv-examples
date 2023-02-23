@@ -1,0 +1,23 @@
+---
+version: "2.1"
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+      - JELLYFIN_PublishedServerUrl=192.168.178.100 #OMV-IP
+    volumes:
+      - /home/appdata/jellyfin/config:/config #change to desired path
+      - /srv/dev-disk-by-uuid-f56c6d1c-99cb-4de9-9126-ebee7c650574/test/tv:/data/tvshows #change UUID
+      - /srv/dev-disk-by-uuid-f56c6d1c-99cb-4de9-9126-ebee7c650574/test/movies:/data/movies #change UUID
+    ports:
+      - 8096:8096
+      - 8920:8920 #optional
+      - 7359:7359/udp #optional
+      - 1900:1900/udp #optional
+    devices:
+      - /dev/dri:/dev/dri #optional, needed for hardware-transcoding
+    restart: unless-stopped
