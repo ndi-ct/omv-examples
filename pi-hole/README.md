@@ -6,4 +6,4 @@
 
 ## Pi-hole:
 - Access Pi-hole-Webinterface at 192.168.178.100:8080/admin 
-- Password is set in docker-compose.yml
+- Password is set in docker-compose.yaml
