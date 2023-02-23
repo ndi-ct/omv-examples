@@ -11,8 +11,8 @@ services:
       - JELLYFIN_PublishedServerUrl=192.168.178.100 #OMV-IP
     volumes:
       - /home/appdata/jellyfin/config:/config #change to desired path
-      - /srv/dev-disk-by-uuid-f56c6d1c-99cb-4de9-9126-ebee7c650574/test/tv:/data/tvshows #change UUID
-      - /srv/dev-disk-by-uuid-f56c6d1c-99cb-4de9-9126-ebee7c650574/test/movies:/data/movies #change UUID
+      - /srv/dev-disk-by-uuid-f56c6d1c-99cb-4de9-9126-ebee7c650574/test/tv:/data/tvshows #change UUID and path to shared folder
+      - /srv/dev-disk-by-uuid-f56c6d1c-99cb-4de9-9126-ebee7c650574/test/movies:/data/movies #change UUID and path to shared folder
     ports:
       - 8096:8096
       - 8920:8920 #optional
