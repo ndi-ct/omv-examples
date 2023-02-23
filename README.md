@@ -1,5 +1,7 @@
 # Docker-Examples for Open Media Vault 6 on the Odroid H3
 
+<img width="1135" alt="portainer_dashboard" src="https://user-images.githubusercontent.com/78471292/220931277-1f7858c8-98de-415d-880e-f1e70a88b28c.png">
+
 This is a collection of Docker-Compose-Files to be used with Portainer (or standalone docker compose) on Open Media Vault 6, as described in [c't-Magazine 6/23](https://www.heise.de/select/ct/2023/6/2300507392196372929). 
 
 ## [Jellyfin (with optional hardware-transcoding)](https://github.com/ndi-ct/omv-examples/tree/main/jellyfin)
